@@ -13,7 +13,7 @@ room = {
 
     'lostForestEntrance': Room("Lost Forest Entrance", "You arrive at the line of the Lost Forest. There's a path to the west that leads to a river, and a path North to brave the insides of the Lost Forest. " ),
 
-    'river': Room("River", "You stop at the river. It is clear blue, and inside of it you see a shiny object. ")
+    'river': Room("River", "You stop at the river. It is clear blue, and inside of it you see a shiny object. "),
 
     'lostForestPath': Room("Lost Forest Path", "You brave your way into the forest. Before you lies a branching path. You see a clearing to the west. In front of you the path continues, but it is dark, and you cannot see what lies ahead."),
 
