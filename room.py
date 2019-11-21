@@ -13,6 +13,6 @@ class Room:
     def __str__(self):
         output = ''
         output += f'{self.name} \n'
-        output += f'\nDescription: {self.description} \n'
+        output += f'\nDescription:\n\n{self.description} \n'
 
         return output

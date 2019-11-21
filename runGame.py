@@ -43,7 +43,7 @@ room['clearing'].s_to = room['lostForestPath']
 room['clearing'].w_to = room['river']
 room['clearing'].n_to = room['cabin']
 room['caveEntrance'].s_to = room['lostForestPath']
-    room['cabin'].s_to = room['clearing']
+room['cabin'].s_to = room['clearing']
 
 # Direction inputs
 movement = ['n' , 's' , 'e' , 'w' ,]
@@ -60,7 +60,7 @@ print(gameRepo)
 print(welcomeMessage)
 
 nameInput = input('What is your name?: \n')
-newPlayer = Player(nameInput, room['village'])
+newPlayer = Player(nameInput, room['village'], 100, 20, [] , [] , [])
     
 while True:
 
