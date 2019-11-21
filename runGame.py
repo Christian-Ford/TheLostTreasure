@@ -13,11 +13,15 @@ room = {
 
     'lostForestEntrance': Room("Lost Forest Entrance", "You arrive at the line of the Lost Forest. There's a path to the west that leads to a river, and a path North to brave the insides of the Lost Forest. " ),
 
-    'river': Room("River", "You stop at the river. It is clear blue, and inside of it you see a shiny object. "),
+    'river': Room("River", "You stop at the river. It is clear blue, and inside of it you see a shiny object. To the East is a path. "),
 
     'lostForestPath': Room("Lost Forest Path", "You brave your way into the forest. Before you lies a branching path. You see a clearing to the west. In front of you the path continues, but it is dark, and you cannot see what lies ahead."),
 
-    'clearing': Room("Clearing", "You stop in the middle of the clearing. There is a firepit in the middle of it, with an iron poker stuck in it.")
+    'clearing': Room("Clearing", "You stop in the middle of the clearing. There is a firepit in the middle of it, with an iron poker stuck in it. There are paths to the North and East. Heading west will lead you to the river."),
+
+    'caveEntrance': Room("Cave Entrance", "As you walk forwared you see a Cave Entrance. There are wooden boards restricting you from entering. To the East there is a path."),
+
+    'cabin': Room("Cabin", "You walk through the path and stop upon a Cabin. The door to the Cabin is locked."),
 }
 
     # Linking Rooms
@@ -30,8 +34,15 @@ room['path'].s_to = room['village']
 room['path'].n_to = room['lostForestEntrance']
 room['lostForestEntrance'].w_to = room['river']
 room['lostForestEntrance'].n_to = room['lostForestPath']
-room['river'].e_to = room['lostForestEntrance']
 room['lostForestPath'].w_to = room['clearing']
+room['lostForestPath'].n_to = room['caveEntrance']
+room['river'].s_to = room['lostForestEntrance']
+room['river'].e_to = room['clearing']
+room['clearing'].s_to = room['lostForestPath']
+room['clearing'].w_to = room['river']
+room['clearing'].n_to = room['cabin']
+room['caveEntrance'].s_to = room['lostForestPath']
+room['cabin'].s_to = room['clearing']
 
 # Direction inputs
 movement = ['n' , 's' , 'e' , 'w' ,]
