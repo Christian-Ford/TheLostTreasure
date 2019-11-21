@@ -2,6 +2,8 @@
 from player import Player
 from room import Room
 
+
+# Defining Rooms
 room = {
     'village': Room("Village Center", "In the Village Center you see the BlackSmith's Shop to the West, the Apothecary to the East, and a Path leading North towards the lost forest"),
 
@@ -24,7 +26,7 @@ room = {
     'cabin': Room("Cabin", "You walk through the path and stop upon a Cabin. The door to the Cabin is locked."),
 }
 
-    # Linking Rooms
+# Linking Rooms
 room['village'].n_to = room['path']
 room['village'].w_to = room['blacksmith']    
 room['village'].e_to = room['apothecary']
@@ -59,9 +61,11 @@ print(gameAuthor)
 print(gameRepo)
 print(welcomeMessage)
 
+# Asking player their name
 nameInput = input('What is your name?: \n')
 newPlayer = Player(nameInput, room['village'], 100, 20, [] , [] , [])
     
+# Game Loop
 while True:
 
     print(newPlayer)

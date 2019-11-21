@@ -1,4 +1,4 @@
-# Creating Room class
+# Defining Room class
 
 class Room:
     def __init__(self, name, description):
