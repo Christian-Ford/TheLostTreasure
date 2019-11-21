@@ -19,7 +19,7 @@ class Room:
         output += f'\nDescription:\n\n{self.description} \n'
 
         if self.character_in_room:
-            output += f'{", and ".join(self.characters)} are in the area'
+            output += f'{", and ".join(self.characters)} reside in the area'
 
         return output
 
