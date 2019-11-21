@@ -52,7 +52,7 @@ while True:
     # User Prompt
     playerAction = input(
         'What do you do? \n'
-        '---------------------------------------- \n'
+        
     )
 
     
@@ -64,6 +64,8 @@ while True:
         print(f'Move North = "n" , Move South = "s" , Move East = "e" , Move West = "w" , Quit Game = "q" \n')
     elif playerAction in movement:
         newPlayer.move_player(playerAction)
+        
+        
     else:
         print(f'Please choose a valid option \n'
                'Valid Options: "n", "s", "e", "w", or "q"')
