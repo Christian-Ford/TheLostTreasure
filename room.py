@@ -1,10 +1,11 @@
 # Defining Room class
 
 class Room:
-    def __init__(self, name, character_in_room, characters, description):
+    def __init__(self, name, character_in_room, characters, inventory, description):
         self.name = name
         self.character_in_room = character_in_room
         self.characters = characters
+        self.inventory = inventory
         self.description = description
         self.n_to = None
         self.s_to = None
