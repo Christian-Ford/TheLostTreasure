@@ -14,9 +14,9 @@ class Enemy(Humanoid):
         self.armor = armor
 
 class NPC(Humanoid):
-    def __init__(self, name, current_room, inventory, money):
+    def __init__(self, name, current_room, money):
         super().__init__(name, current_room)
-        self.inventory = inventory
+        self.inventory = []
         self.money = money
 
 # Testing

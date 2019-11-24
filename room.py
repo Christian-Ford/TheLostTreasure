@@ -1,11 +1,11 @@
 # Defining Room class
 
 class Room:
-    def __init__(self, name, character_in_room, characters, inventory, description):
+    def __init__(self, name, character_in_room, description):
         self.name = name
         self.character_in_room = character_in_room
-        self.characters = characters
-        self.inventory = inventory
+        self.characters = []
+        self.inventory = []
         self.description = description
         self.n_to = None
         self.s_to = None
@@ -22,6 +22,7 @@ class Room:
         if self.character_in_room:
             output += f'{", and ".join(self.characters)} reside in the area'
 
+        
         return output
 
     
