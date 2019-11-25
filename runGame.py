@@ -26,13 +26,20 @@ room['clearing'].w_to = room['river']
 room['clearing'].n_to = room['cabin']
 room['caveEntrance'].s_to = room['lostForestPath']
 room['cabin'].s_to = room['clearing']
+room['cabin'].n_to = room['cabinInside']
 
 # Add Items to rooms
-room['village'].inventory = [Item(
-    'knife', 'weapon', 5, 'A dull knife. Probably not very useful...') ,
-    Item(
-    'treasure', 'treasure', 999, 'You have done it! You have found the treasure!')
+room['village'].inventory = [
+    Item('odd stone', 'junk', 5, 'An odd stone that catches your attention') ,
+    
 ]
+room['river'].inventory = [
+    Item('silver sword', 'weapon', 20, 'A steel sword, great for taking out skeletons')
+]
+room['cabinInside'].inventory = [
+    Item('treasure', 'treasure', 999, 'You did it! You found the treasure!')
+]
+
 
 
 # Direction inputs

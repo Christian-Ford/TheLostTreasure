@@ -22,5 +22,7 @@ room = {
     'caveEntrance': Room("Cave Entrance",  False, "As you walk forwared you see a Cave Entrance. There are wooden boards restricting you from entering. To the East there is a path."),
 
     'cabin': Room("Cabin", False, "You walk through the path and stop upon a Cabin. The door to the Cabin is locked."),
+
+    'cabinInside': Room("Cabin Inside", False, "Inside, the cabin is small, with a wooden table and chair sitting next to a fireplace, there's an open chest with treasure inside")
 }
 
